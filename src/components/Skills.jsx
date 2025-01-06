@@ -19,7 +19,10 @@ const skills = [
     category: "Frontend",
     technologies: [
       { name: "React", icon: <DiReact className="text-blue-500" /> },
-      { name: "Tailwind", icon: <RiTailwindCssFill className="text-blue-500" /> },
+      {
+        name: "Tailwind",
+        icon: <RiTailwindCssFill className="text-blue-500" />,
+      },
       { name: "HTML", icon: <DiHtml5 className="text-orange-600" /> },
       { name: "CSS", icon: <DiCss3 className="text-blue-600" /> },
       {
@@ -36,7 +39,10 @@ const skills = [
       { name: "MongoDB", icon: <DiMongodb className="text-green-600" /> },
       { name: "React", icon: <DiReact className="text-blue-500" /> },
       { name: "GitHub", icon: <DiGithubBadge className="text-gray-600" /> },
-      { name: "Express Js", icon: <SiExpress className="text-white text-xl" /> },
+      {
+        name: "Express Js",
+        icon: <SiExpress className="text-white text-xl" />,
+      },
       { name: "Django", icon: <BiLogoDjango className="text-green-600" /> },
     ],
   },

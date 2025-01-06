@@ -55,7 +55,11 @@ const Contact = () => {
                 About <span>Me</span>
               </h3>
               <p className="text-justify leading-7 w-11/12 mx-auto">
-              Skilled in React.js, TypeScript, Tailwind CSS for frontend development, and Python for backend services such as creating Windows services and handling DICOM files. Proficient in Node.js, Express, and MongoDB for building robust backend systems.
+                Skilled in React.js, TypeScript, Tailwind CSS for frontend
+                development, and Python for backend services such as creating
+                Windows services and handling DICOM files. Proficient in
+                Node.js, Express, and MongoDB for building robust backend
+                systems.
               </p>
             </div>
 

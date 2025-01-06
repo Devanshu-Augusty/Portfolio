@@ -37,7 +37,13 @@ const Navbar = () => {
         className="max-w-[1300px] mx-auto flex justify-between text-gray-200
         text-xl items-center px-12 h-20"
       >
-        <Link to="Devanshu" smooth={true} offset={-100} duration={500} className="cursor-pointer">
+        <Link
+          to="Devanshu"
+          smooth={true}
+          offset={-100}
+          duration={500}
+          className="cursor-pointer"
+        >
           Devanshu Augusty
         </Link>
 
