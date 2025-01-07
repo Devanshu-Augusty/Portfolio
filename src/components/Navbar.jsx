@@ -82,35 +82,22 @@ const Navbar = () => {
         >
           <ul className="font-semibold text-4xl space-y-8 mt-24 text-center">
             <li>
-              <Link
-                to="skills"
-                onClick={closeNav}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                About
+              <Link to="skills" onClick={closeNav}  smooth={true} offset={0} duration={500}>
+                Skills
               </Link>
             </li>
             <li>
-              <Link
-                to="portfolio"
-                onClick={closeNav}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Portfolio
+              <Link to="projects" onClick={closeNav} smooth={true} offset={-50} duration={500}>
+                Projects
               </Link>
             </li>
             <li>
-              <Link
-                to="contact"
-                onClick={closeNav}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
+              <Link to="experience" onClick={closeNav}  smooth={true} offset={-50} duration={500}>
+                Experience
+              </Link>
+            </li>
+            <li>
+              <Link to="contact" onClick={closeNav}  smooth={true} offset={-70} duration={500}>
                 Contact
               </Link>
             </li>
