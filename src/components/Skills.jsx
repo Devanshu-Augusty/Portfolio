@@ -8,11 +8,12 @@ import {
   DiMongodb,
   DiGithubBadge,
   DiBootstrap,
+  DiPython,
 } from "react-icons/di";
 import Reveal from "./Reveal";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress } from "react-icons/si";
-import { BiLogoDjango } from "react-icons/bi";
+import { BiLogoDjango, BiLogoTypescript } from "react-icons/bi";
 
 const skills = [
   {
@@ -29,6 +30,7 @@ const skills = [
         name: "JavaScript",
         icon: <DiJavascript1 className="text-yellow-500" />,
       },
+      { name: "TypeScript", icon: <BiLogoTypescript className="text-blue-600" /> },
       { name: "Bootstrap", icon: <DiBootstrap className="text-purple-600" /> },
     ],
   },
@@ -44,6 +46,7 @@ const skills = [
         icon: <SiExpress className="text-white text-xl" />,
       },
       { name: "Django", icon: <BiLogoDjango className="text-green-600" /> },
+      { name: "Python", icon: <DiPython className="text-blue-600" /> },
     ],
   },
 ];
