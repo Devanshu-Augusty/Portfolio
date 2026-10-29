@@ -9,10 +9,13 @@ import {
   DiGithubBadge,
   DiBootstrap,
   DiPython,
+  DiGit,
+  DiMysql,
 } from "react-icons/di";
 import Reveal from "./Reveal";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiExpress } from "react-icons/si";
+import { SiExpress, SiCplusplus } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 import { BiLogoDjango, BiLogoTypescript } from "react-icons/bi";
 
 const skills = [
@@ -32,6 +35,7 @@ const skills = [
       },
       { name: "TypeScript", icon: <BiLogoTypescript className="text-blue-600" /> },
       { name: "Bootstrap", icon: <DiBootstrap className="text-purple-600" /> },
+      { name: "VS Code", icon: <VscVscode className="text-blue-500" /> },
     ],
   },
   {
@@ -39,7 +43,8 @@ const skills = [
     technologies: [
       { name: "Node Js", icon: <DiNodejsSmall className="text-green-500" /> },
       { name: "MongoDB", icon: <DiMongodb className="text-green-600" /> },
-      { name: "React", icon: <DiReact className="text-blue-500" /> },
+      { name: "MySQL", icon: <DiMysql className="text-blue-500" /> },
+      { name: "Git", icon: <DiGit className="text-orange-600" /> },
       { name: "GitHub", icon: <DiGithubBadge className="text-gray-600" /> },
       {
         name: "Express Js",
@@ -47,6 +52,7 @@ const skills = [
       },
       { name: "Django", icon: <BiLogoDjango className="text-green-600" /> },
       { name: "Python", icon: <DiPython className="text-blue-600" /> },
+      { name: "C++", icon: <SiCplusplus className="text-blue-700" /> },
     ],
   },
 ];

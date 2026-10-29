@@ -5,7 +5,12 @@ import Reveal from "./Reveal";
 const experience = [
   {
     company: "Mile9",
-    period: "May 2024 - Present",
+    period: "Jan 2026 - Present",
+    description: "Software Engineer",
+  },
+  {
+    company: "Mile9",
+    period: "May 2024 - Dec 2025",
     description: "Associate Software Engineer",
   },
   {

@@ -6,16 +6,22 @@ import {
   AiOutlineTwitter,
   AiOutlineLinkedin,
 } from "react-icons/ai";
-import {
-  DiCss3,
-  DiHtml5,
-  DiJavascript1,
-  DiNodejsSmall,
-  DiReact,
-} from "react-icons/di";
+import { DiMongodb, DiNodejsSmall, DiReact } from "react-icons/di";
+import { SiExpress } from "react-icons/si";
 import { motion } from "framer-motion";
 import profilePic from "../assets/goku.jpg";
 import resume from "../assets/Devanshu_Augusty_Resume.pdf";
+
+const CAREER_START = new Date(2023, 9, 1); // Oct 2023
+
+// Years since CAREER_START, rounded down to the nearest half year (3, 3.5, 4, ...)
+const getYearsOfExperience = () => {
+  const now = new Date();
+  const months =
+    (now.getFullYear() - CAREER_START.getFullYear()) * 12 +
+    (now.getMonth() - CAREER_START.getMonth());
+  return Math.floor(months / 6) / 2;
+};
 
 const Hero = () => {
   return (
@@ -58,8 +64,8 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1 }}
             className="text-gray-300 max-w-[300px] md:max-w-[500px] md:text-2xl text-lg mb-6"
           >
-            I am a passionate software engineer with over 1.2 years of
-            experience.
+            I am a passionate software engineer with over{" "}
+            {getYearsOfExperience()} years of experience.
           </motion.p>
 
           <motion.div
@@ -127,9 +133,8 @@ const Hero = () => {
         id="skills"
       >
         <p className="text-gray-200 mr-6">My Tech Stack</p>
-        <DiHtml5 className="text-orange-600 mx-2" />
-        <DiCss3 className="text-blue-600 mx-2" />
-        <DiJavascript1 className="text-yellow-500 mx-2" />
+        <DiMongodb className="text-green-600 mx-2" />
+        <SiExpress className="text-white mx-2" />
         <DiReact className="text-blue-500 mx-2" />
         <DiNodejsSmall className="text-green-500 mx-2" />
       </motion.div>
